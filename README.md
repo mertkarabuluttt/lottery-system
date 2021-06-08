@@ -6,11 +6,13 @@ This is a lottery system where only one event takes place each day and concludes
 Since the application has a microservice architecture, it can be easily scaled for high load and provide higher TPS with a help of load balancer in front, so it is easier to resolve bottlenecks. By scaling, it can prevent single point of failure and it will be possible to add more features in time without downtime. Also it is possible to configure the database and backend services to comply with CQRS concept and seperate the read and update operations to the data store for better efficiency. For instance, database can be configured to operate on multiple hosts and some instances could be used for only read-only purposes like validating participants, while others are for write purposes like registering new participants. 
 
 
+## Domain Model
+
 ![Domain Model](/domain_model.png)
-Format: ![Alt Text](url)
 
 
-## What did I omit:
+
+## Ommited
 
 * Did not write test cases because it would take more time and was not a requirement but it would be beneficial to work with TDD principal for quality of code and eliminating potential bugs.
 
@@ -24,7 +26,7 @@ Format: ![Alt Text](url)
 
 
 
-## Build/Run instructions:
+## Build/Run instructions
 
 * Prerequisites: docker engine and docker-compose must be already installed.
 
@@ -41,7 +43,7 @@ Format: ![Alt Text](url)
     * Copy, paste and run the code inside ./db/insert.sql
   
 
-## Rollback instructions:
+## Rollback instructions
 
 * Run remove.sh script.
 
