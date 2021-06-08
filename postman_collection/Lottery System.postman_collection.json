@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "738e6e3c-1a7e-462a-9046-73e81eef028b",
+		"name": "Lottery System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Lottery Events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/lotteries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"lotteries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Register as Participant",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"mert\",\n    \"name\": \"Mert Karabulut\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/lotteries/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"lotteries",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Participants",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/lotteries/participants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"lotteries",
+						"participants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Submit Ballot",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"mert\"\n    \"numbers\": \"11 12 7 14 17 42\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/lotteries/ballots/submit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"lotteries",
+						"ballots",
+						"submit"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

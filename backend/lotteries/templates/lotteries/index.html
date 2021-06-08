@@ -1,0 +1,9 @@
+{% if event_list %}
+    <ul>
+    {% for event in event_list %}
+        <li><a href="/lotteries/{{ event.id }}/">{{ event.event_date }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No events are available.</p>
+{% endif %}
