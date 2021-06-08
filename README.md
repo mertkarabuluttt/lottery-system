@@ -20,7 +20,7 @@ Since the application has a microservice architecture, it can be easily scaled f
 
 * Did not provide a login service because it would take more time but can be added to index page.
 
-* Left some templates unfinished like registering participant or submitting ballots because I didn't want to spend too much time on that but I a added the Postman collection of the request's so you can check them out.
+* Left some templates unfinished like registering participant or submitting ballots because I didn't want to spend too much time on that but I added the Postman collection of the request's so you can check them out.
 
 * Could not automate the fake data generation for reviewing, but gave the instructions for it.
 
